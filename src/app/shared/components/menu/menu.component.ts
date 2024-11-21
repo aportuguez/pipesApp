@@ -4,7 +4,7 @@ import { MenuItem } from 'primeng/api';
 @Component({
   selector: 'shared-menu',
   templateUrl: './menu.component.html',
-  styles: ``
+  styles: ``,
 })
 export class MenuComponent {
   public menuItems: MenuItem[] | undefined = [];
@@ -18,31 +18,31 @@ export class MenuComponent {
           {
             label: 'Textos y Fechas',
             icon: 'pi pi-align-left',
-            routerLink: '/'
+            routerLink: '/',
           },
           {
             label: 'Numeros',
             icon: 'pi pi-dollar',
-            routerLink: '/numbers'
+            routerLink: '/numbers',
           },
           {
             label: 'No comunes',
             icon: 'pi pi-globe',
-            routerLink: '/uncommon'
+            routerLink: '/uncommon',
           },
-        ]
+        ],
       },
       {
         label: 'Pipes personalizados',
         icon: 'pi pi-cog',
         items: [
           {
-            label: 'Otro elemento',
+            label: 'Custom Pipes',
             icon: 'pi pi-cog',
+            routerLink: '/custom',
           },
-        ]
-      }
+        ],
+      },
     ];
   }
-
 }
