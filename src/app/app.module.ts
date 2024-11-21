@@ -25,7 +25,7 @@ registerLocaleData(localeFrCA)
     SharedModule,
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: 'es-CR' }
+    { provide: LOCALE_ID, useValue: 'en-US' }
   ],
   bootstrap: [AppComponent]
 })

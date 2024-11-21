@@ -1,8 +1,6 @@
 <p-panel header="Pipes Basicos" class="p-1">
   <h1>Pipes Basicos</h1>
-  <p>
-    Pipes incluidos en Angular - Usualmente en el CommonModule
-  </p>
+  <p>Pipes incluidos en Angular - Usualmente en el CommonModule</p>
 </p-panel>
 
 <div class="grid">
@@ -31,7 +29,7 @@
         <li>fecha | date: 'MMMM'</li>
         <li>fecha | date: 'MMMM dd, yyyy'</li>
       </ol>
-      <hr>
+      <hr />
       <ol>
         <li>fecha | date:'long':'GMT-6'</li>
         <li>fecha | date:'long':'GMT-4'</li>
@@ -46,18 +44,18 @@
       <ol>
         <li>{{ customDate }}</li>
         <li>{{ customDate | date }}</li>
-        <li>{{ customDate | date:'short' }}</li>
-        <li>{{ customDate | date:'long' }}</li>
-        <li>{{ customDate | date:'MMMM' }}</li>
-        <li>{{ customDate | date:'MMMM dd, yyyy' }}</li>
+        <li>{{ customDate | date : "short" }}</li>
+        <li>{{ customDate | date : "long" }}</li>
+        <li>{{ customDate | date : "MMMM" }}</li>
+        <li>{{ customDate | date : "MMMM dd, yyyy" }}</li>
       </ol>
-      <hr>
+      <hr />
       <ol>
-        <li>{{ customDate | date:'long':'GMT-6' }}</li>
-        <li>{{ customDate | date:'long':'GMT-4' }}</li>
-        <li>{{ customDate | date:'long':'':'es-CR' }}</li>
-        <li>{{ customDate | date:'long':'':'en-US' }}</li>
-        <li>{{ customDate | date:'long':'':'fr-CA' }}</li>
+        <li>{{ customDate | date : "long" : "GMT-6" }}</li>
+        <li>{{ customDate | date : "long" : "GMT-4" }}</li>
+        <li>{{ customDate | date : "long" : "" : "es-CR" }}</li>
+        <li>{{ customDate | date : "long" : "" : "en-US" }}</li>
+        <li>{{ customDate | date : "long" : "" : "fr-CA" }}</li>
       </ol>
     </p-card>
   </div>
